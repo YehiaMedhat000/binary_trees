@@ -5,6 +5,7 @@
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
     binary_tree_t *root;
@@ -19,6 +20,10 @@ int main(void)
     binary_tree_insert_right(root->left, 50);
     binary_tree_insert_left(root->left->left, 10);
     binary_tree_insert_left(root->left->left->left, 8);
+
+    binary_tree_insert_right(root->left->left, 1);
+    binary_tree_insert_right(root->left->left, 2);
+    binary_tree_insert_right(root->left->left, 3);
     binary_tree_print(root);
 
     balance = binary_tree_balance(root);
