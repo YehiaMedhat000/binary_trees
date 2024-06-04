@@ -2,7 +2,7 @@
 
 /**
  * binary_tree_inorder - Traverses the tree
- * in post_order method
+ * in in_order method
  *
  * @tree: The head node of the tree
  * @func: The function to use over the nodes

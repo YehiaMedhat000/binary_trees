@@ -2,7 +2,7 @@
 
 /**
  * binary_tree_preorder - Traverses the tree
- * in preorder method
+ * in pre_order method
  *
  * @tree: The head node of the tree
  * @func: The function to use over the nodes
