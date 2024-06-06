@@ -69,7 +69,7 @@ int binary_tree_is_complete(const binary_tree_t *tree)
 	int flag = 0;
 
 	if (tree == NULL)
-	return 0;
+	return (0);
 
 	enqueue(&queue, (binary_tree_t *)tree);
 
@@ -80,7 +80,7 @@ int binary_tree_is_complete(const binary_tree_t *tree)
 		if (current->left)
 		{
 			if (flag)
-			return 0;
+			return (0);
 			enqueue(&queue, current->left);
 		}
 		else
@@ -89,11 +89,11 @@ int binary_tree_is_complete(const binary_tree_t *tree)
 		if (current->right)
 		{
 			if (flag)
-			return 0;
+				return (0);
 			enqueue(&queue, current->right);
 		}
 		else
 			flag = 1;
 	}
-	return 1;
+	return (1);
 }
